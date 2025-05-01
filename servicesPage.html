@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: Arial, sans-serif;
+background: #f8f8f8;
+margin: 0;
+padding: 0;">
+
+<header>
+    <nav>
+        <div class="logo"><img src="logo.png" alt="Logo" style="width: 30px; height: 30px;"><h1>Uxbridge</h1> </div>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="tyreService.html">Tyre Services</a></li>
+        <li><a href="servicesPage.html">Services</a></li>
+        <li><a href="maintenanceService.html">Servicing</a></li>
+      </ul>
+
+      <!-- Button -->
+      <button class="btn">Make Appointment</button>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+<header class="hero-section">
+    <div class="overlay">
+        <div class="container">
+            <h2 class="subtitle">Car Repair & Maintenance</h2>
+            <h1 class="title">Our Services</h1>
+            <p class="breadcrumb">
+                <a href="homePage.html">Home</a> <span> / </span> <span class="active">Services</span>
+            </p>
+        </div>
+    </div>
+</header>
+
+
+<section class="services-section">
+    <div class="services-container">
+        <!-- <div class="service-card">
+            <div class="service-image">
+                <img src="maintenance.jpg" alt="Servicing & Maintenance">
+                
+            </div>
+            <div class="service-content">
+                <h3>Servicing & Maintenance</h3>
+                <p>The air conditioning system or your car is a sealed system...</p>
+                <a href="maintenanceService.html" class="read-more">Read More →</a>
+            </div>
+        </div> -->
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="brakes.jpg" alt="Brakes & Suspension Services">
+            </div>
+            <div class="service-content">
+                <h3>Brakes & Suspension Services</h3>
+                <p>Ensure your brakes and suspension are in top shape to maintain safety and control on the road.
+                </p>
+                <a href="brakeService.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="VehicleCheck&Diagnostics.jpg" alt="Vehicle Check & Diagnostics">
+            </div>
+            <div class="service-content">
+                <h3>Vehicle Check & Diagnostics</h3>
+                <p>Comprehensive diagnostics help identify faults early, saving you time and avoiding bigger issues.</p>
+                <a href="vehicleCheckService.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="transmission.jpg" alt="Transmission & Clutch">
+            </div>
+            <div class="service-content">
+                <h3>Transmission & Clutch</h3>
+                <p>Maintain smooth gear changes and performance with expert clutch and transmission services.</p>
+                <a href="transmissionService.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <!-- <div class="service-card">
+            <div class="service-image">
+                <img src="tyre-changes.png" alt="Tyres & Wheel Services">
+            </div>
+            <div class="service-content">
+                <h3>Tyres & Wheel Services</h3>
+                <p>Generally speaking, tires should be rotated every 6,000 to 8,000 miles...</p>
+                <a href="tyreService.html" class="read-more">Read More →</a>
+            </div>
+        </div> -->
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="ExhaustSystem.jpg" alt="Exhaust System">
+            </div>
+            <div class="service-content">
+                <h3>Exhaust System</h3>
+                <p>From repairs to upgrades, we handle exhaust systems for better efficiency and emissions control.</p>
+                <a href="exhaustSystemService.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="ElectricalServices.jpg" alt="Electrical Services">
+                <span class="service-price">from £30</span>
+            </div>
+            <div class="service-content">
+                <h3>Electrical Services</h3>
+                <p>From wiring to diagnostics, our electrical services keep your vehicle’s systems running smoothly.</p>
+                <a href="electricalServices.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="Emergency.jpeg" alt="Emergency & Outcall Services">
+                <span class="service-price">from £80</span>
+            </div>
+            <div class="service-content">
+                <h3>Emergency & Outcall Services</h3>
+                <p>Quick, reliable help when you need it most—wherever you are, we’ll get you moving again.</p>
+                <a href="emergencyService.html" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and Description -->
+      <div class="footer-section">
+        <div class="logo"><img src="logo.png" alt="Logo" style="width: 40px; height: 40px;"> Uxbridge</div>
+        <p>You get to enjoy a super fast and hassle free delivery. Additionally, upon delivering the wheels & tires, we offer free installation.</p>
+      </div>
+  
+      <!-- Links -->
+      <div class="footer-section">
+        <h4>Links</h4>
+        <div class="footer-links">
+          <ul>
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="tyreService.html">Tires</a></li>
+            <li><a href="servicesPage.html">All Services</a></li>
+          </ul>
+          
+            <ul>
+                <li><a href="maintenanceService.html">Servicing</a></li>
+                <li><a href="emergencyService.html">Emergency</a></li>
+                <li><a href="brakeService.html">Brakes</a></li>
+              </ul>
+          
+        </div>
+      </div>
+      
+  
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Call Us On <a href="tel:+447494227487">(749) 422 74 87</a></p>
+        <p>6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+        <p><a href="mailto:info@site.com">info@site.com</a></p>
+      </div>
+  
+      <!-- Newsletter -->
+      <div class="footer-section">
+       
+        
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>Uxbridge © 2025. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyres & Wheel Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: 'Poppins', Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f8f8f8;
+color: #333;
+line-height: 1.6;">
+
+<header>
+    <nav>
+      <div class="logo"><img src="logo.png" alt="Logo" style="width: 30px; height: 30px;"><h1>Uxbridge</h1> </div>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="tyreService.html">Tyre Services</a></li>
+        <li><a href="servicesPage.html">Services</a></li>
+        <li><a href="maintenanceService.html">Servicing</a></li>
+      </ul>
+
+      <!-- Button -->
+      <button class="btn">Make Appointment</button>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+
+<header class="hero-section">
+    <div class="overlay">
+        <div class="container">
+            <h2 class="subtitle">Car Repair & Maintenance</h2>
+            <h1 class="title">Tyres & Wheel Services</h1>
+            <p class="breadcrumb">
+                <a href="homePage.html">Home</a> <span> / </span> <span class="active">Tyres & Wheel Services</span>
+            </p>
+        </div>
+    </div>
+</header>
+
+    <div class="service-page__container">
+        
+        <!-- Left Content (Main Service Details) -->
+        <div class="service-details">
+            <img src="tyre-changes.png" alt="Tyres & Wheel Services" class="service-details__image">
+            <h2 class="service-details__heading">Get Your Wheels Rolling Smoothly</h2>
+            <p class="service-details__description">
+                Keeping your tyres in top condition is essential for a safe and smooth driving experience. 
+                Our Tyres & Wheel Services ensure that your vehicle’s tyres are fitted, balanced, and aligned 
+                for maximum performance and safety. Whether you need brand-new tyres, reliable used options, 
+                or precision alignment, we have you covered.
+            </p>
+
+            <h3 class="service-details__subheading">Our Services</h3>
+            <ul class="service-details__list">
+                <li><strong>New Car Tyres – From £50:</strong> Budget, mid-range, and premium tyres with expert fitting.</li>
+                <li><strong>Used Car Tyres – From £25:</strong> Cost-effective, safety-checked used tyres for all makes and models.</li>
+                <li><strong>Wheel Alignment – From £40:</strong> Corrects misaligned wheels for even tyre wear and better handling.</li>
+                <li><strong>Wheel Balancing – From £12.50:</strong> Eliminates vibrations and ensures smooth driving.</li>
+                <li><strong>Puncture Repair – From £15:</strong> Quick, affordable tyre repairs to get you back on the road.</li>
+                <li><strong>TPMS Repair & Service – From £20:</strong> Sensor replacements, programming, and TPMS diagnostics.</li
+            </ul>
+            <button class="book-tyre-btn" onclick="openPopup()">Book Tyre Service</button>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="service-sidebar">
+            <!-- <nav class="service-sidebar__menu">
+                <ul>
+                    <li><a href="brakeService.html">Brakes & Suspension</a></li>
+                    <li><a href="electricalServices.html">Electrical Services</a></li>
+                    <li><a href="exhaustSystemService.html">Exhaust System</a></li>
+                    <li><a href="maintenanceService.html">Servicing & Maintenance</a></li>
+                    <li class="service-sidebar__menu--active"><a href="tyreService.html">Tyres & Wheel Services</a></li>
+                    <li><a href="transmissionService.html">Transmission & Clutch</a></li>
+                    <li><a href="vehicleCheckService.html">Vehicle Check & Diagnostics</a></li>
+                    <li><a href="emergencyService.html">Emergency & Outcall Services</a></li>
+                </ul>
+            </nav> -->
+
+            <div class="service-sidebar__contact-box">
+                <h3 class="service-sidebar__contact-title">Contact Us</h3>
+                <p style="padding-bottom: 10px;"><strong>Address:</strong> 6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+                <p style="padding-bottom: 10px;"><strong>Phone:</strong> 7494-227-487</p>
+                <p style="padding-bottom: 10px;"><strong>Email:</strong> info@yourwebsite.com</p>
+                <p><strong>Opening Hours:</strong> From 9 a.m. to 6 p.m..</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+          <div class="logo"><img src="logo.png" alt="Logo" style="width: 40px; height: 40px;"> Uxbridge</div>
+          <p>You get to enjoy a super fast and hassle free delivery. Additionally, upon delivering the wheels & tires, we offer free installation.</p>
+        </div>
+    
+        <!-- Links -->
+        <div class="footer-section">
+          <h4>Links</h4>
+          <div class="footer-links">
+            <ul>
+              <li><a href="homePage.html">Home</a></li>
+              <li><a href="tyreService.html">Tires</a></li>
+              <li><a href="servicesPage.html">All Services</a></li>
+            </ul>
+            <ul>
+              <li><a href="maintenanceService.html">Servicing</a></li>
+              <li><a href="emergencyService.html">Emergency</a></li>
+              <li><a href="brakeService.html">Brakes</a></li>
+            </ul>
+          </div>
+        </div>
+        
+    
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Call Us On <a href="tel:+447494227487">(749) 422 74 87</a></p>
+          <p>6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+          <p><a href="mailto:info@site.com">info@site.com</a></p>
+        </div>
+    
+        <!-- Newsletter -->
+        <div class="footer-section">
+         
+          
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>Uxbridge © 2025. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <!-- Popup Form -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <div class="popup-scroll">
+        <iframe
+  src="https://api.leadconnectorhq.com/widget/form/LtZJTfpmHfQBUdtYLhhV"
+  style="width:100%;height:100%;border:none;border-radius:4px"
+  id="inline-LtZJTfpmHfQBUdtYLhhV" 
+  data-layout="{'id':'INLINE'}"
+  data-trigger-type="alwaysShow"
+  data-trigger-value=""
+  data-activation-type="alwaysActivated"
+  data-activation-value=""
+  data-deactivation-type="neverDeactivate"
+  data-deactivation-value=""
+  data-form-name="tyre booking  - Copy"
+  data-height="1284"
+  data-layout-iframe-id="inline-LtZJTfpmHfQBUdtYLhhV"
+  data-form-id="LtZJTfpmHfQBUdtYLhhV"
+  title="tyre booking  - Copy"
+      >
+</iframe>
+
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  
+  <script>
+    function openPopup() {
+      document.getElementById('popupOverlay').style.display = 'flex';
+    }
+  
+    function closePopup() {
+      document.getElementById('popupOverlay').style.display = 'none';
+    }
+  </script>
+  
+</body>
+</html>

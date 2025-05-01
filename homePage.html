@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Repair Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".custom-slide");
+    let currentIndex = 0;
+    let totalSlides = slides.length;
+    
+    // Function to show slide
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
+
+    // Show the first slide initially
+    showSlide(currentIndex);
+
+    // Next Slide
+    document.querySelector(".custom-next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    });
+
+    // Previous Slide
+    document.querySelector(".custom-prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    });
+
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }, 5000);
+});
+
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo"><img src="logo.png" alt="Logo" style="width: 30px; height: 30px;"><h1>Uxbridge</h1> </div>
+    
+          <!-- Hamburger icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+          <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="tyreService.html">Tyre Services</a></li>
+            <li><a href="servicesPage.html">Services</a></li>
+            <li><a href="maintenanceService.html">Servicing</a></li>
+          </ul>
+    
+          <!-- Button -->
+          <button class="btn">Make Appointment</button>
+        </nav>
+      </header>
+    
+      <script>
+        function toggleMenu() {
+          document.querySelector('.nav-links').classList.toggle('active');
+        }
+      </script>
+    
+
+    <div class="custom-slider">
+        <div class="custom-slide active" style="background-image: url('background2.jpg');background-size: cover;">
+            <div class="custom-content">
+                <h3>True Care in Autocare</h3>
+                <h1>Car Repair Services<br>for Affordable Prices</h1>
+                <div class="custom-buttons">
+                    <a href="servicesPage.html" class="custom-btn custom-red">Our Services</a>
+                    <a href="#inline-AfsWGQdhdOQF3M0U7xO8" class="custom-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-slide" style="background-image: url('background1.jpg');">
+            <div class="custom-content">
+                <h3>Professional Auto Service</h3>
+                <h1>We Keep Your Engine Running</h1>
+                <div class="custom-buttons">
+                    <a href="servicesPage.html" class="custom-btn custom-red">Our Services</a>
+                    <a href="#inline-AfsWGQdhdOQF3M0U7xO8" class="custom-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-slide" style="background-image: url('car-repair-shops-Denton.jpg');">
+            <div class="custom-content">
+                <h3>Best Auto Repair Solutions</h3>
+                <h1>Quality Work, Affordable Pricing</h1>
+                <div class="custom-buttons">
+                    <a href="servicesPage.html" class="custom-btn custom-red">Our Services</a>
+                    <a href="#inline-AfsWGQdhdOQF3M0U7xO8" class="custom-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-controls">
+            <div class="custom-prev">&#10094;</div>
+            <div class="custom-next">&#10095;</div>
+        </div>
+    </div>
+
+    <section class="bmm-info-section">
+        <div class="bmm-info-container">
+            <div class="bmm-info-card">
+                <div class="bmm-info-icon">
+                    <img src="location.png" alt="Location">
+                </div>
+                <h3 class="bmm-info-title">Location Details</h3>
+                <p class="bmm-info-text">6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, United Kingdom<br>+ (44) 749 - 422 - 7487</p>
+            </div>
+    
+            <div class="bmm-info-card">
+                <div class="bmm-info-icon">
+                    <img src="emergency.png" alt="Emergency">
+                </div>
+                <h3 class="bmm-info-title">Emergency Repair</h3>
+                <p class="bmm-info-text">Low rates and emergency service available 24 hours a day every day of the year</p>
+            </div>
+    
+            <div class="bmm-info-card">
+                <div class="bmm-info-icon">
+                    <img src="send.png" alt="Directions">
+                </div>
+                <h3 class="bmm-info-title">Get Directions</h3>
+                <p class="bmm-info-text">Get directions to Uxbridge Repair in Seattle and have your car checked today</p>
+            </div>
+    
+            <div class="bmm-info-card">
+                <div class="bmm-info-icon">
+                    <img src="appointment.png" alt="Appointment">
+                </div>
+                <h3 class="bmm-info-title">Make Appointment</h3>
+                <p class="bmm-info-text">Schedule an appointment today through our online calendar</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+      
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+      <section class="why-us-section">
+        <div class="why-us-container">
+          <div class="why-us-text">
+            <h2 class="why-us-subtitle">Who we are</h2>
+            <h2 class="bmm-services-title">Why Choose <span >Us</span>?</h2>
+            <p>
+              At Uxbridge Tyres & Mechanics Ltd, we provide high-quality tyres and expert vehicle care. With years of hands-on experience and a team of skilled mechanics, we ensure your car stays in top condition — whether it’s tyres, general repairs, or regular maintenance.
+            </p>
+      
+            <ul class="why-us-list">
+              <li> New & Used Tyres – Budget / Mid-Range / Premium</li>
+              <li> Servicing – Interim / Annual / Major Packages</li>
+              <li> General Car Repairs</li>
+            </ul>
+      
+            <a href="#inline-AfsWGQdhdOQF3M0U7xO8" class="why-us-btn">Call Us Now!</a>
+          </div>
+      
+          <div class="why-us-image">
+            <img src="mechanic-under.jpeg" alt="Mechanic under car">
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <section class="bmm-services-section">
+        <div class="bmm-services-header">
+            <h3 class="bmm-services-subtitle">Repair and Maintenance</h3>
+            <h2 class="bmm-services-title">Our Services</h2>
+            <p class="bmm-services-description">
+                Our repair service keeps your vehicle moving. From minor repairs to major repairs of your vehicle.
+                We offer a <strong>variety of services</strong> and you can count on us for all of your vehicle's needs.
+            </p>
+        </div>
+    
+        <div class="bmm-services-container">
+            <div class="bmm-service-card">
+                <div class="bmm-service-image">
+                    <img src="tyre-changes.png" alt="Tyres & Wheel Services">
+                </div>
+                <div class="bmm-service-content">
+                    <h3 class="bmm-service-title">Tyres & Wheel Services</h3>
+                    <p class="bmm-service-text">
+                      We provide expert tyre fitting, balancing, and wheel alignment to keep your vehicle safe ...
+                    </p>
+                    <a href="tyreService.html" class="bmm-service-link">Read More →</a>
+                </div>
+            </div>
+    
+            <div class="bmm-service-card">
+                <div class="bmm-service-image">
+                    <img src="maintenance.jpg" alt="Servicing & Maintenance">
+                </div>
+                <div class="bmm-service-content">
+                    <h3 class="bmm-service-title">Servicing & Maintenance</h3>
+                    <p class="bmm-service-text">
+                      Our routine servicing includes oil changes, fluid checks, and filters to keep your engine healthy ...
+                    </p>
+                    <a href="maintenanceService.html" class="bmm-service-link">Read More →</a>
+                </div>
+            </div>
+    
+            <div class="bmm-service-card">
+                <div class="bmm-service-image">
+                    <img src="brakes.jpg" alt="Brakes & Suspension">
+                </div>
+                <div class="bmm-service-content">
+                    <h3 class="bmm-service-title">Brakes & Suspension</h3>
+                    <p class="bmm-service-text">
+                      From brake pad replacement to suspension tuning, we make sure your car stops safely ...
+                    </p>
+                    <a href="brakeService.html" class="bmm-service-link">Read More →</a>
+                </div>
+            </div>
+    
+            <div class="bmm-service-card">
+                <div class="bmm-service-image">
+                    <img src="ElectricalServices.jpg" alt="Electrical Services">
+                </div>
+                <div class="bmm-service-content">
+                    <h3 class="bmm-service-title">Electrical Services</h3>
+                    <p class="bmm-service-text">
+                      We handle battery testing, lighting, wiring, and diagnostics for all essential car electrical ...
+                    </p>
+                    <a href="electricalServices.html" class="bmm-service-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          
+
+    <section class="landing-form-section">
+        <div class="landing-form-container">
+          <div class="landing-left-content">
+            <h2>Book Your Free Call Back</h2>
+            <p>Fill out the form and one of our expert mechanics will get back to you shortly.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#inline-AfsWGQdhdOQF3M0U7xO8" class="custom-btn custom-red">Request a Callback</a>
+          </div>
+      
+          <div class="landing-right-form">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/AfsWGQdhdOQF3M0U7xO8"
+              style="width:100%; height:100%; border:none; border-radius:4px; padding: 20;"
+              id="inline-AfsWGQdhdOQF3M0U7xO8" 
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Request Call Back - form"
+              data-height="556"
+              data-layout-iframe-id="inline-AfsWGQdhdOQF3M0U7xO8"
+              data-form-id="AfsWGQdhdOQF3M0U7xO8"
+              title="Request Call Back - form"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+
+    <div class="testimonial-section">
+      <div class="testimonial-image">
+        <img src="h2_img-6.png" alt="Mechanic">
+      </div>
+      <div class="testimonial-content">
+        <h4>TESTIMONIALS</h4>
+        <p class="quote" id="quote">
+          “I had a fantastic experience The team was knowledgeable, helped me pick the perfect tires within my budget, and the installation was quick and professional. I feel safer on the road, and I’ll definitely be coming back!”
+        </p>
+        <div class="author">
+          <h5 id="author">Scott Lisech</h5>
+          <span id="date">25 Nov, 2022</span>
+        </div>
+        <div class="avatars">
+          <img src="TESTIMONIALS1.jpeg" alt="Avatar 1" class="active" onclick="changeTestimonial(0)">
+          <img src="TESTIMONIALS2.jpeg" alt="Avatar 2" onclick="changeTestimonial(1)">
+          <img src="TESTIMONIALS3.jpeg" alt="Avatar 3" onclick="changeTestimonial(2)">
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <script>
+      const testimonials = [
+        {
+          quote: "“I had a fantastic experience The team was knowledgeable, helped me pick the perfect tires within my budget, and the installation was quick and professional. I feel safer on the road, and I’ll definitely be coming back!”",
+          author: "Scott Lisech",
+          date: "25 Nov, 2024"
+        },
+        {
+          quote: "“The customer service here is unmatched. They explained all my options without any pressure and gave me a great deal on high-quality tires. My car drives so much smoother now. Highly recommend this shop!”",
+          author: "Sara Thompson",
+          date: "03 Jan, 2025"
+        },
+        {
+          quote: "“From the moment I walked in, I felt taken care of. The staff was friendly, patient, and really knew their stuff. They made sure I got exactly what I needed for my truck, and the prices were very reasonable. Excellent service!”",
+          author: "Michael Lee",
+          date: "05 Sep, 2024"
+        }
+      ];
+    
+      function changeTestimonial(index) {
+        // Update quote, author, and date
+        document.getElementById("quote").textContent = testimonials[index].quote;
+        document.getElementById("author").textContent = testimonials[index].author;
+        document.getElementById("date").textContent = testimonials[index].date;
+    
+        // Change active avatar
+        const avatars = document.querySelectorAll(".avatars img");
+        avatars.forEach((img, i) => {
+          img.classList.toggle("active", i === index);
+        });
+      }
+    </script>
+    
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+          <div class="logo"><img src="logo.png" alt="Logo" style="width: 40px; height: 40px;"><h1>Uxbridge</h1> </div>
+          <p>You get to enjoy a super fast and hassle free delivery. Additionally, upon delivering the wheels & tires, we offer free installation.</p>
+        </div>
+    
+        <!-- Links -->
+        <div class="footer-section">
+          <h4>Links</h4>
+          <div class="footer-links">
+            <ul>
+              <li><a href="homePage.html">Home</a></li>
+              <li><a href="tyreService.html">Tyres</a></li>
+              <li><a href="servicesPage.html">All Services</a></li>
+            </ul>
+            <ul>
+              <li><a href="maintenanceService.html">Servicing</a></li>
+              <li><a href="emergencyService.html">Emergency</a></li>
+              <li><a href="brakeService.html">Brakes</a></li>
+            </ul>
+          </div>
+        </div>
+        
+    
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Call Us On <a href="tel:+447494227487">(749) 422 74 87</a></p>
+          <p>6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+          <p><a href="mailto:info@site.com">info@site.com</a></p>
+        </div>
+    
+        <!-- Newsletter -->
+        <div class="footer-section">
+         
+          
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>Uxbridge © 2025. All rights reserved.</p>
+      </div>
+    </footer>
+    
+      
+
+    
+    
+    
+
+  
+  <!-- Modal Overlay -->
+  <div id="formModal" class="form-modal">
+    <div class="form-modal-content">
+      <!-- Close Button -->
+      <button onclick="closeFormPopup()" class="close-btn">&times;</button>
+  
+      <!-- Scrollable Form Container -->
+      <div class="iframe-wrapper">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/FjLf7s5YIPBDAYBoYvFx"
+          class="form-iframe"
+          id="inline-FjLf7s5YIPBDAYBoYvFx"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Customer Sign Up Form - 3x Voucher"
+          data-height="1346"
+          data-layout-iframe-id="inline-FjLf7s5YIPBDAYBoYvFx"
+          data-form-id="FjLf7s5YIPBDAYBoYvFx"
+          title="Customer Sign Up Form - 3x Voucher"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <!-- GHL Script -->
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  
+  <!-- JS Logic -->
+  <script>
+    function openFormPopup() {
+      document.getElementById('formModal').style.display = 'block';
+    }
+  
+    function closeFormPopup() {
+      document.getElementById('formModal').style.display = 'none';
+    }
+  
+    window.onload = function () {
+      openFormPopup();
+    };
+  </script>
+      
+
+
+
+  
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicing & Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: 'Poppins', Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f8f8f8;
+color: #333;
+line-height: 1.6;">
+
+<header>
+    <nav>
+      <div class="logo"><img src="logo.png" alt="Logo" style="width: 30px; height: 30px;"><h1>Uxbridge</h1> </div>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="tyreService.html">Tyre Services</a></li>
+        <li><a href="servicesPage.html">Services</a></li>
+        <li><a href="maintenanceService.html">Servicing</a></li>
+      </ul>
+
+      <!-- Button -->
+      <button class="btn">Make Appointment</button>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+
+<header class="hero-section">
+    <div class="overlay">
+        <div class="container">
+            <h2 class="subtitle">Car Repair & Maintenance</h2>
+            <h1 class="title">Servicing & Maintenance</h1>
+            <p class="breadcrumb">
+                <a href="homePage.html">Home</a> <span> / </span> <span class="active">Servicing & Maintenance</span>
+            </p>
+        </div>
+    </div>
+</header>
+
+    <div class="service-page__container">
+        
+        <!-- Servicing & Maintenance Section -->
+        <section class="service-cards">
+            <h2 class="service-cards__heading">Keep Your Car Running Smoothly</h2>
+            <p class="service-cards__description">
+                Regular servicing is crucial to keep your car performing at its best. Our comprehensive Servicing & Maintenance packages ensure that your vehicle remains safe, reliable, and fuel-efficient.
+            </p>
+        
+            <div class="cards-wrapper">
+                <div class="service-card">
+                    <h3>Interim Service</h3>
+                    <p class="price">£119.99 (up to 2L engine)</p>
+                    <p>Oil & filter change with a basic vehicle health check.</p>
+                    <button class="get-quote-btn" onclick="openQuotePopup()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <h3>Full/Annual Service</h3>
+                    <p class="price">£215.99 (up to 2L engine)</p>
+                    <p>Comprehensive engine service, including oil, filters, and full inspection.</p>
+                    <button class="get-quote-btn" onclick="openQuotePopup()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <h3>Major Service</h3>
+                    <p class="price">£295.99 (up to 2L engine)</p>
+                    <p>Includes a full service plus spark plugs and fuel filter replacement.</p>
+                    <button class="get-quote-btn" onclick="openQuotePopup()">Get a Quote</button>
+                </div>
+                <div class="service-card">
+                    <h3>Coolant Replacement</h3>
+                    <p class="price">From £40</p>
+                    <p>Flushes & replaces old coolant for optimal engine temperature.</p>
+                    <button class="get-quote-btn" onclick="openQuotePopup()">Get a Quote</button>
+                </div>
+            </div>
+            <button class="book-tyre-btn" onclick="openPopup()">Book Tyre Service</button>
+        </section>
+        
+
+
+        <!-- Right Sidebar -->
+        <aside class="service-sidebar">
+            
+
+            <div class="service-sidebar__contact-box">
+                <h3 class="service-sidebar__contact-title">Contact Us</h3>
+                <p style="padding-bottom: 10px;"><strong>Address:</strong> 6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+                <p style="padding-bottom: 10px;"><strong>Phone:</strong> 7494-227-487</p>
+                <p style="padding-bottom: 10px;"><strong>Email:</strong> info@yourwebsite.com</p>
+                <p><strong>Opening Hours:</strong> From 9 a.m. to 6 p.m..</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+          <div class="logo"><img src="logo.png" alt="Logo" style="width: 40px; height: 40px;"> Uxbridge</div>
+          <p>You get to enjoy a super fast and hassle free delivery. Additionally, upon delivering the wheels & tires, we offer free installation.</p>
+        </div>
+    
+        <!-- Links -->
+        <div class="footer-section">
+          <h4>Links</h4>
+          <div class="footer-links">
+            <ul>
+              <li><a href="homePage.html">Home</a></li>
+              <li><a href="tyreService.html">Tires</a></li>
+              <li><a href="servicesPage.html">All Services</a></li>
+            </ul>
+            <ul>
+              <li><a href="maintenanceService.html">Servicing</a></li>
+              <li><a href="emergencyService.html">Emergency</a></li>
+              <li><a href="brakeService.html">Brakes</a></li>
+            </ul>
+          </div>
+        </div>
+        
+    
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Call Us On <a href="tel:+447494227487">(749) 422 74 87</a></p>
+          <p>6 Lees Parade, Uxbridge Rd, Uxbridge UB10 0PQ, UK</p>
+          <p><a href="mailto:info@site.com">info@site.com</a></p>
+        </div>
+    
+        <!-- Newsletter -->
+        <div class="footer-section">
+         
+          
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>Uxbridge © 2025. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Popup Form -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <div class="popup-scroll">
+        <iframe
+  src="https://api.leadconnectorhq.com/widget/form/AfsWGQdhdOQF3M0U7xO8"
+  style="width:100%;height:100%;border:none;border-radius:4px"
+  id="inline-AfsWGQdhdOQF3M0U7xO8" 
+  data-layout="{'id':'INLINE'}"
+  data-trigger-type="alwaysShow"
+  data-trigger-value=""
+  data-activation-type="alwaysActivated"
+  data-activation-value=""
+  data-deactivation-type="neverDeactivate"
+  data-deactivation-value=""
+  data-form-name="Request Call Back - form"
+  data-height="856"
+  data-layout-iframe-id="inline-AfsWGQdhdOQF3M0U7xO8"
+  data-form-id="AfsWGQdhdOQF3M0U7xO8"
+  title="Request Call Back - form"
+      >
+</iframe>
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- Get a Quote Popup -->
+<div class="popup-overlay" id="quotePopupOverlay">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closeQuotePopup()">×</button>
+    <div class="popup-scroll">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/7pTnqudVsO3AQS1srkf5"
+        style="width:100%;height:100%;border:none;border-radius:3px"
+        id="inline-7pTnqudVsO3AQS1srkf5" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Form 10"
+        data-height="909"
+        data-layout-iframe-id="inline-7pTnqudVsO3AQS1srkf5"
+        data-form-id="7pTnqudVsO3AQS1srkf5"
+        title="Form 10"
+      >
+      </iframe>
+    </div>
+  </div>
+</div>
+
+
+  
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  
+  <script>
+    function openPopup() {
+      document.getElementById('popupOverlay').style.display = 'flex';
+    }
+  
+    function closePopup() {
+      document.getElementById('popupOverlay').style.display = 'none';
+    }
+  </script>
+
+<script>
+  function openQuotePopup() {
+    document.getElementById('quotePopupOverlay').style.display = 'flex';
+  }
+
+  function closeQuotePopup() {
+    document.getElementById('quotePopupOverlay').style.display = 'none';
+  }
+</script>
+
+
+
+
+</body>
+</html>
